@@ -11,17 +11,22 @@
 </head>
 
 <body>
-  <div id="cookie">
-    <div id="left" class="half"></div>
-    <div id="right" class="half"></div>
+  <div class="flex centerWrapper">
+    <h1 class="accentText center">Fortune Cookie</h1>
   </div>
-  <div id="wrapper">
-    wrapper
+  <div class="flex" id="mainContent">
+    <div id="cookie">
+      <div id="left" class="half"></div>
+      <div id="right" class="half"></div>
+    </div>
+    <div id="wrapper">
+      wrapper
+    </div>
+    <form id="cookieForm">
+      <input id="cookieInput" />
+      <button onclick="reloadWithQueryStringVars()" type="button">go</button>
+    </form>
   </div>
-  <form id="cookieForm">
-    <input id="cookieInput" />
-    <button onclick="reloadWithQueryStringVars()" type="button">go</button>
-  </form>
 </body>
 <script src="index.js"></script>
 
