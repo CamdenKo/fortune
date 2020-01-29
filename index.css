@@ -16,3 +16,7 @@ body {
   transition: opacity 1s ease;
   /* display: none; */
 }
+
+.clickable {
+  cursor: pointer;
+}

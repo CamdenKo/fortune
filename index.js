@@ -30,6 +30,9 @@ const hideElement = (elem) => {
 const main = () => {
   if (window.location.search) {
     const msg = processQuery(window.location.search)
+    console.log(document.getElementById('wrapper'))
+    document.getElementById('wrapper').innerHTML = msg.fortune
+    document.getElementById('cookie').classList.add('clickable')
     console.log(msg)
   } else {
     showElement(getElement('cookieForm'))

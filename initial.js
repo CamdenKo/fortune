@@ -2,6 +2,7 @@ const combineQuery = queryArr =>
   queryArr[0] + '=' + queryArr[1]
 
 const reloadWithQueryStringVars = (queryStringVars) => {
+  if (!document.getElementById('cookieInput').value) return false
   const currentUrl = location.href.includes('?') ?
     location.href.split('?')[0] :
     location.href
