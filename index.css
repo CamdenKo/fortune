@@ -3,15 +3,30 @@
   --cookie-color: #fce38a;
   --secondary-color: #eaffd0;
   --accent-color: #95e1d3;
+  --primary-font: 'Rubik', sans-serif;
+  --secondary-font: 'Vollkorn', serif;
 }
 
 body {
   background-color: var(--main-color);
 }
 
+h1 {
+  font-size: 4.5em;
+  letter-spacing: 3px;
+}
+
 
 .accentText {
   color: var(--accent-color);
+}
+
+.primaryFont {
+  font-family: var(--primary-font);
+}
+
+.textCenter {
+  text-align: center;
 }
 
 .flex {
